@@ -2,6 +2,10 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #fff;
-    color: #1f2937;
+    background-color: #efeeea;
+}
+
+@theme {
+    --color-navy: #273f4f;
+    --color-orange: #fe7743;
 }
