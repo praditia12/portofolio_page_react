@@ -11,7 +11,16 @@ const Hero = () => {
                 </p>
                 <p className="text-2xl text-navy font-medium mt-3">Based in Jakarta, Indonesia</p>
                 <div className="button-cta mt-6">
-                    <Button />
+                    <Button
+                        onClick={() =>
+                            window.open(
+                                "https://drive.google.com/file/d/1Ic0tkAR3tVAZP2Rg_zhCp5lPMS9SiLgq/view?usp=sharing",
+                                "_blank"
+                            )
+                        }
+                    >
+                        Resume
+                    </Button>
                 </div>
             </div>
             <div className="relative">
