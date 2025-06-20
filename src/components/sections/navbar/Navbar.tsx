@@ -6,9 +6,15 @@ const Navbar = () => {
         <header className="flex flex-row justify-between items-center py-8">
             <div className="font-semibold text-xl text-navy">Adit Praditia</div>
             <div className="flex flex-row gap-5">
-                <HashLink to={"/"}>Home</HashLink>
-                <HashLink to={"#About"}>About</HashLink>
-                <HashLink to={"#Work"}>Work</HashLink>
+                <HashLink to={"#Home"} smooth>
+                    Home
+                </HashLink>
+                <HashLink to={"#About"} smooth>
+                    About
+                </HashLink>
+                <HashLink to={"#Work"} smooth>
+                    Work
+                </HashLink>
             </div>
             <div className="flex flex-row gap-5 items-center">
                 <Link target="_blank" to={"https://medium.com/@adit.praditia"}>

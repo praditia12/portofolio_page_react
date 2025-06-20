@@ -5,15 +5,15 @@ const Work = () => {
         {
             title: "Paradina Web App",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.",
-            image: "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "Developed responsive web interfaces using React.js (TypeScript) and Material UI. Collaborated with UI/UX and backend teams to ensure seamless API integration and pixel-perfect implementation. Focused on performance, code quality, and delivering a smooth user experience.",
+            image: "/images/projects/paradina-cover.png",
             date: "October 2023 - January 2024",
         },
         {
             title: "Khidma Mobile App",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.",
-            image: "https://images.unsplash.com/photo-1542621334-a254cf47733d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "Built intuitive mobile app screens and flows using Flutter based on approved design specifications. Handled UI implementation, API integration, and thorough testing to ensure a stable and responsive app. Prioritized usability and smooth interaction across different devices.",
+            image: "/images/projects/khidma-cover.png",
             date: "January - May 2024",
         },
     ];

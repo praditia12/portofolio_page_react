@@ -2,7 +2,7 @@ import Button from "../../common/Button/Button";
 
 const Hero = () => {
     return (
-        <section className="flex flex-row justify-between items-center py-5">
+        <section id="Home" className="flex flex-row justify-between items-center py-5">
             <div className="flex flex-col gap-y-3 font-medium">
                 <p className="text-2xl text-navy">Hello, I'm Adit,</p>
                 <p className="flex flex-col text-8xl font-black leading-none">
@@ -14,7 +14,7 @@ const Hero = () => {
                     <Button
                         onClick={() =>
                             window.open(
-                                "https://drive.google.com/file/d/1Ic0tkAR3tVAZP2Rg_zhCp5lPMS9SiLgq/view?usp=sharing",
+                                "https://drive.google.com/file/d/1fMibswZwzB-JpZXzz585-JMaI6fM2PEr/view?usp=sharing",
                                 "_blank"
                             )
                         }
@@ -24,7 +24,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="relative">
-                <img src="/images/foto-profile.png" alt="hero-image" width={500} />
+                <img src="/images/foto-profile.png" alt="hero-image" width={460} />
                 <img
                     src="/images/illustrations/illustration_1.png"
                     alt="illustration"
