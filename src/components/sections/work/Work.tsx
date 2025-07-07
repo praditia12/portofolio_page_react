@@ -17,23 +17,31 @@ const Work = () => {
             date: "January - May 2024",
         },
     ];
+
     return (
-        <section id="Work" className="flex flex-col">
-            <h2 className="font-extrabold text-orange text-7xl leading-relaxed">work.</h2>
-            <div className="text-navy text-xl leading-[44px] mt-8 max-w-4xl">
-                My main focus is building intuitive and responsive user interfaces, with user experience as a top
-                priority. Here are some selected works that reflect my passion and skills in Frontend Development.
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-                {projects.map((project, index) => (
-                    <CardProject
-                        key={index}
-                        image={project.image}
-                        date={project.date}
-                        title={project.title}
-                        description={project.description}
-                    />
-                ))}
+        <section id="Work" className="py-12 md:py-24">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col">
+                {/* Heading */}
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-orange leading-tight">work.</h2>
+
+                {/* Intro Text */}
+                <p className="text-navy text-base md:text-lg lg:text-xl mt-6 leading-relaxed">
+                    My main focus is building intuitive and responsive user interfaces, with user experience as a top
+                    priority. Here are some selected works that reflect my passion and skills in Frontend Development.
+                </p>
+
+                {/* Project Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                    {projects.map((project, index) => (
+                        <CardProject
+                            key={index}
+                            image={project.image}
+                            date={project.date}
+                            title={project.title}
+                            description={project.description}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );
