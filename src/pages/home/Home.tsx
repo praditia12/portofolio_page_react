@@ -1,22 +1,39 @@
-import Navbar from "../../components/sections/navbar/Navbar";
-import Hero from "../../components/sections/hero/Hero";
-import About from "../../components/sections/about/About";
-import Work from "../../components/sections/work/Work";
-import Contact from "../../components/sections/contacts/Contacts";
-import Footer from "../../components/sections/footer/Footer";
+import { Suspense, lazy } from "react";
 import ScrollToTop from "../../components/common/ScrollToTop/ScrollToTop";
+
+const Navbar = lazy(() => import("../../components/sections/navbar/Navbar"));
+const Hero = lazy(() => import("../../components/sections/hero/Hero"));
+const About = lazy(() => import("../../components/sections/about/About"));
+const Work = lazy(() => import("../../components/sections/work/Work"));
+const Contact = lazy(() => import("../../components/sections/contacts/Contacts"));
+
+const SectionLoader = () => <div className="w-full py-20 text-center text-navy text-lg">Loading...</div>;
 
 const Home = () => {
     return (
-        <>
-            <Navbar />
-            <Hero />
-            <About />
-            <Work />
-            <Contact />
-            <Footer />
+        <main>
+            <Suspense fallback={<SectionLoader />}>
+                <Navbar />
+            </Suspense>
+
+            <Suspense fallback={<SectionLoader />}>
+                <Hero />
+            </Suspense>
+
+            <Suspense fallback={<SectionLoader />}>
+                <About />
+            </Suspense>
+
+            <Suspense fallback={<SectionLoader />}>
+                <Work />
+            </Suspense>
+
+            <Suspense fallback={<SectionLoader />}>
+                <Contact />
+            </Suspense>
+
             <ScrollToTop />
-        </>
+        </main>
     );
 };
 
