@@ -1,54 +1,98 @@
-# React + TypeScript + Vite
+# 🌐 Adit Praditia – Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the personal portfolio website of [Adit Praditia](https://www.linkedin.com/in/adit-praditia/), a frontend developer passionate about building clean and responsive interfaces for web and mobile platforms.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Preview
 
-## Expanding the ESLint configuration
+🌍 [Visit Website](https://aditpraditia-portofolio.netlify.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## ✨ Features
+
+-   Responsive design across desktop and mobile
+-   Smooth scroll and active section highlight on navbar
+-   Sectioned layout: Hero, About, Work, Contact
+-   Contact form integrated with Formspree
+-   Reusable and customizable UI components
+-   Clean and modern aesthetic with Tailwind CSS
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend       | Tools / Libraries                 |
+| -------------- | --------------------------------- |
+| React          | `18+`                             |
+| Tailwind CSS   | `v3+`                             |
+| React Router   | `react-router-dom`                |
+| Hash Scrolling | `react-router-hash-link`          |
+| Form Handling  | [Formspree](https://formspree.io) |
+| Icons          | Custom + Lucide                   |
+
+---
+
+## 🗂️ Project Structure
+
+src/
+│
+├── assets/ # Images, icons, illustrations
+├── components/
+│ ├── common/ # Reusable components (e.g. Button, Card)
+│ ├── sections/ # Each page section (Hero, About, Work, Contact)
+│
+├── pages/
+│ └── Home.tsx # Main page using all sections
+├── App.tsx # Main application with routing
+├── main.tsx # Entry point
+└── styles/ # Tailwind and global styles
+
+---
+
+## 🧩 Reusable Components
+
+-   `Button`: Custom button with `variant`, `size`, `loading`, `icon`, etc.
+-   `CardProject`: Project display component with image, title, date, and description
+-   `Navbar`: Responsive navigation with active section tracking
+-   `ContactForm`: Connected to Formspree with submit feedback
+
+---
+
+## 🔧 Getting Started
+
+### 1. Clone the project
+
+```bash
+git clone https://github.com/praditia12/portofolio_page_react.git
+cd portfolio_page_react
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
+# or
+yarn install
 ```
+
+### 3. Run locally
+
+```bash
+npm run dev
+# or
+yarn run dev
+```
+
+The site will be running at: `http://localhost:5173` (if you're using Vite)
+
+## 📫 Contact
+
+If you’d like to collaborate or have freelance opportunities, feel free to reach out:
+
+    📧 Email: aditpraditiaaa@gmail.com
+
+    💼 LinkedIn: linkedin.com/in/adit-praditia
+
+    💻 GitHub: github.com/praditia12
