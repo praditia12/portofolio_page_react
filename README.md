@@ -35,7 +35,7 @@ This is the personal portfolio website of [Adit Praditia](https://www.linkedin.c
 ---
 
 ## 🗂️ Project Structure
-
+```bash
 src/
 │
 ├── assets/ # Images, icons, illustrations
@@ -48,7 +48,7 @@ src/
 ├── App.tsx # Main application with routing
 ├── main.tsx # Entry point
 └── styles/ # Tailwind and global styles
-
+```
 ---
 
 ## 🧩 Reusable Components
