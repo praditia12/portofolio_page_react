@@ -1,4 +1,5 @@
 import Button from "../../common/Button/Button";
+import { Download } from "lucide-react";
 
 const Hero = () => {
     const handleResumeClick = () => {
@@ -12,15 +13,23 @@ const Hero = () => {
                 <div className="flex flex-col gap-4 text-center lg:text-left">
                     <p className="text-xl md:text-2xl text-navy font-medium">Hello, I'm Adit,</p>
 
-                    <h1 className="text-5xl md:text-6xl lg:text-8xl font-black leading-tight">
+                    <h1 className="text-5xl md:text-6xl lg:text-8xl font-black leading-tight md:leading-none">
                         <span className="text-orange block">Front End</span>
                         <span className="text-navy block">Developer</span>
                     </h1>
 
                     <p className="text-base md:text-xl text-navy font-medium">Based in Jakarta, Indonesia</p>
 
-                    <div className="mt-6">
-                        <Button onClick={handleResumeClick}>Resume</Button>
+                    <div className="mt-4 md:mt-6">
+                        <Button
+                            size="lg"
+                            variant="primary"
+                            leftIcon={<Download size={24} />}
+                            onClick={handleResumeClick}
+                            className="relative isolate overflow-hidden shadow-lg before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-white/5 hover:before:opacity-30 before:transition-opacity before:duration-300 backdrop-blur-sm border-2 border-navy "
+                        >
+                            Resume
+                        </Button>
                     </div>
                 </div>
 

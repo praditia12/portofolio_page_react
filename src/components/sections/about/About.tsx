@@ -14,7 +14,7 @@ const About = () => {
 
                 {/* PT Protonema */}
                 <div className="mt-12 md:mt-16 md:ml-20 relative">
-                    <div className="hidden md:block absolute -left-6 md:-left-16 top-1 text-2xl">💼</div>
+                    <div className="absolute right-1 md:-left-16 top-1 text-xl md:text-2xl">💼</div>
                     <div className="font-semibold text-navy text-lg md:text-2xl leading-10">2022 - Present</div>
                     <div className="font-normal text-navy text-base md:text-lg lg:text-xl leading-relaxed mt-2 md:mt-4">
                         <div className="font-semibold">Operational Staff - PT Protonema</div>
@@ -30,7 +30,7 @@ const About = () => {
 
                 {/* Universitas Cakrawala */}
                 <div className="mt-12 md:mt-16 md:ml-20 relative">
-                    <div className="hidden md:block absolute -left-6 md:-left-16 top-1 text-2xl">🎓</div>
+                    <div className="absolute right-1 md:-left-16 top-1 text-xl md:text-2xl">🎓</div>
                     <div className="font-semibold text-navy text-lg md:text-2xl leading-10">2023 - Present</div>
                     <div className="font-normal text-navy text-base md:text-lg lg:text-xl leading-relaxed mt-2 md:mt-4">
                         <div className="font-semibold">Computer Science - Cakrawala University</div>

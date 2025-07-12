@@ -10,11 +10,18 @@ const Work = () => {
             date: "October 2023 - January 2024",
         },
         {
+            title: "Company Web PT Protonema",
+            description:
+                "Developed a responsive and modern corporate website, built with React.js and Tailwind CSS. I contributed to both the UI/UX design process and frontend coding implementation. I was responsible for designing intuitive and engaging interfaces, then translating them into efficient React components with Tailwind CSS styling.",
+            image: "/images/projects/company-web-cover.png",
+            date: "December 2023 - January 2024",
+        },
+        {
             title: "Khidma Mobile App",
             description:
                 "Built intuitive mobile app screens and flows using Flutter based on approved design specifications. Handled UI implementation, API integration, and thorough testing to ensure a stable and responsive app. Prioritized usability and smooth interaction across different devices.",
             image: "/images/projects/khidma-cover.png",
-            date: "January - May 2024",
+            date: "January 2024 - May 2024",
         },
     ];
 
@@ -31,7 +38,7 @@ const Work = () => {
                 </p>
 
                 {/* Project Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                     {projects.map((project, index) => (
                         <CardProject
                             key={index}

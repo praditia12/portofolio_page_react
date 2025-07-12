@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../../common/Button/Button";
 
 const Contacts = () => {
     const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
@@ -60,12 +61,9 @@ const Contacts = () => {
                         required
                         className="border border-gray-300 px-4 py-3 rounded-md text-navy focus:outline-orange"
                     />
-                    <button
-                        type="submit"
-                        className="self-start bg-orange hover:bg-orange/90 text-white px-6 py-3 rounded-md font-semibold transition"
-                    >
+                    <Button type="submit" variant="primary" size="md" className="self-start font-semibold">
                         Send Message
-                    </button>
+                    </Button>
                 </form>
 
                 {/* Feedback message */}
