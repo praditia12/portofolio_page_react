@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import ScrollToTop from "../../components/common/ScrollToTop/ScrollToTop";
+import Footer from "../../components/sections/footer/Footer";
 
 const Navbar = lazy(() => import("../../components/sections/navbar/Navbar"));
 const Hero = lazy(() => import("../../components/sections/hero/Hero"));
@@ -30,6 +31,10 @@ const Home = () => {
 
             <Suspense fallback={<SectionLoader />}>
                 <Contact />
+            </Suspense>
+
+            <Suspense fallback={<SectionLoader />}>
+                <Footer />
             </Suspense>
 
             <ScrollToTop />
